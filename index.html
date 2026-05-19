@@ -8,18 +8,16 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
-
     :root{
-      --bg:#0b1120;
-      --panel:#111827;
-      --text:#f3f4f6;
-      --muted:#9ca3af;
-      --accent:#60a5fa;
-      --border:rgba(255,255,255,0.06);
+      --bg:#f7f7f8;
+      --panel:#ffffff;
+      --text:#0b1220;
+      --muted:#6b7280;
+      --accent:#2563eb;
+      --border:rgba(15,23,42,0.06);
+      --card:#fbfdff;
       --max-width:1100px;
     }
 
@@ -35,9 +33,10 @@
 
     body{
       font-family:"Inter",sans-serif;
-      background:linear-gradient(180deg,#0b1120 0%, #111827 100%);
+      background:var(--bg);
       color:var(--text);
-      line-height:1.7;
+      font-size:16px;
+      line-height:1.6;
       -webkit-font-smoothing:antialiased;
     }
 
@@ -46,6 +45,10 @@
       max-width:var(--max-width);
       margin:auto;
     }
+
+    /* Skip link for keyboard users */
+    .skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus, .skip-link:active{position:static;width:auto;height:auto;padding:8px 12px;background:var(--panel);border-radius:6px;box-shadow:0 6px 18px rgba(15,23,42,0.08);z-index:999}
 
     header{
       padding:28px 0;
@@ -67,6 +70,8 @@
       font-size:0.95rem;
       transition:0.2s;
     }
+
+    a:focus-visible, .button:focus-visible{outline:3px solid rgba(37,99,235,0.18);outline-offset:3px}
 
     nav a:hover{
       color:var(--text);
@@ -115,10 +120,16 @@
     }
 
     p{
-      color:#d1d5db;
+      color:#374151;
       margin-bottom:18px;
-      max-width:800px;
+      font-size:1rem;
+      line-height:1.6;
     }
+
+    /* Make about section text darker for readability */
+    section#about p{color:var(--text);max-width:none}
+
+    .section-label{color:var(--muted);font-size:0.95rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px}
 
     .grid{
       display:grid;
@@ -128,10 +139,11 @@
     }
 
     .card{
-      background:rgba(255,255,255,0.03);
+      background:var(--card);
       border:1px solid var(--border);
-      border-radius:16px;
-      padding:24px;
+      border-radius:12px;
+      padding:20px;
+      box-shadow:0 6px 18px rgba(15,23,42,0.04);
     }
 
     .card h3{
@@ -148,51 +160,139 @@
     .links{
       display:flex;
       flex-wrap:wrap;
-      gap:14px;
-      margin-top:24px;
+      gap:12px;
+      margin-top:14px;
+      align-items:center;
     }
 
     .button{
       display:inline-block;
       padding:12px 18px;
       border-radius:10px;
-      background:rgba(96,165,250,0.12);
-      color:#dbeafe;
+      background:var(--accent);
+      color:white;
       text-decoration:none;
-      border:1px solid rgba(96,165,250,0.2);
-      transition:0.2s;
-      font-weight:500;
-    }
-
-    .button:hover{
-      background:rgba(96,165,250,0.2);
-    }
-
-    .publication{
-      padding:22px 0;
-      border-bottom:1px solid var(--border);
-    }
-
-    .publication:last-child{
-      border-bottom:none;
-    }
-
-    .publication-title{
+      border:1px solid rgba(37,99,235,0.9);
+      transition:transform 160ms ease, box-shadow 160ms ease;
       font-weight:600;
-      margin-bottom:6px;
+      box-shadow:0 6px 18px rgba(37,99,235,0.12);
     }
+    .button:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(37,99,235,0.14)}
+
+    /* Publications styling */
+    .publication{
+      display:flex;
+      gap:18px;
+      background:var(--panel);
+      border:1px solid var(--border);
+      border-radius:10px;
+      padding:16px;
+      margin-bottom:20px;
+      box-shadow:0 6px 14px rgba(15,23,42,0.03);
+      align-items:flex-start;
+      transition:transform 150ms ease,box-shadow 150ms ease;
+    }
+    .publication:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(15,23,42,0.06)}
+
+    .pub-figure{width:140px;height:96px;border-radius:8px;overflow:hidden;background:#eef3fb;flex:0 0 140px;display:flex;align-items:center;justify-content:center}
+    .pub-figure img{width:100%;height:100%;object-fit:cover;display:block}
+
+    .pub-body{flex:1}
+
+    .publication-title a{
+      color:var(--text);
+      font-weight:700;
+      text-decoration:none;
+      font-size:1rem;
+    }
+
+    .publication-authors{color:var(--muted);font-size:0.94rem;margin-top:6px}
 
     .publication-meta{
       color:var(--muted);
-      font-size:0.95rem;
+      font-size:0.92rem;
+      margin-top:6px;
     }
 
-    footer{
-      padding:50px 0;
-      text-align:center;
+    .publication .pub-links{
+      margin-top:10px;
+    }
+
+    .publication .pub-links a{color:var(--accent);text-decoration:none;font-weight:600;font-size:0.95rem}
+
+    /* Press section */
+    .press-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:18px}
+    .press-item{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:14px;display:flex;flex-direction:column;gap:8px;transition:transform 160ms ease,box-shadow 160ms ease}
+    .press-item:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(15,23,42,0.06)}
+    .press-item a{color:var(--accent);text-decoration:none;font-weight:600}
+    .press-source{color:var(--muted);font-size:0.92rem}
+    .press-logo-wrap{width:56px;height:56px;display:flex;align-items:center;justify-content:center;border-radius:6px;background:transparent;flex:0 0 56px}
+    .press-logo-image{max-width:100%;max-height:100%;display:block}
+    .press-item-header{display:flex;gap:12px;align-items:center}
+    .press-item-header a{flex:1}
+    .pub-year{color:var(--muted);font-size:0.9rem;margin-left:10px;font-weight:600}
+
+    @media(max-width:640px){
+      .publication{flex-direction:column}
+      .pub-figure{width:100%;height:160px;flex:unset}
+    }
+    .publication-keywords{color:var(--muted);font-size:0.9rem;margin-top:8px}
+
+    /* External link icon */
+    .external-icon{width:14px;height:14px;display:inline-block;margin-left:8px;vertical-align:middle;fill:currentColor}
+
+    .hero{
+      padding:60px 0 40px;
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns:220px 1fr;
+      gap:22px;
+      align-items:center;
+      max-width:900px;
+      margin:0 auto;
+    }
+
+    .photo{
+      width:220px;height:220px;border-radius:12px;overflow:hidden;border:1px solid var(--border);background:#e6eef6;display:flex;align-items:center;justify-content:center;
+    }
+
+    .photo img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.12);transition:transform 220ms ease}
+
+    .hero h1{
+      font-size:2.2rem;
+      margin:0 0 6px;
+      color:var(--text);
+    }
+
+    .hero-text .title-row{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;margin-bottom:8px}
+
+    .simple-links a{display:inline-flex;align-items:center;gap:8px;color:var(--accent);text-decoration:none;font-weight:600}
+
+    .icon{width:16px;height:16px;display:inline-block;vertical-align:middle;fill:currentColor}
+
+    /* Normalize SVG icons to avoid odd strokes/deformation */
+    .simple-links a svg, .simple-links a .icon, .external-icon{width:16px;height:16px;flex-shrink:0;display:inline-block;vertical-align:middle}
+    .simple-links a svg *{fill:currentColor !important;stroke:none !important}
+    .external-icon *{fill:currentColor !important;stroke:none !important}
+
+    .hero .subtitle{
+      max-width:760px;
       color:var(--muted);
-      font-size:0.9rem;
-      border-top:1px solid var(--border);
+      font-size:1rem;
+      margin-bottom:8px;
+    }
+
+    .hero .award{
+      margin-top:12px;
+      display:inline-block;
+      padding:8px 12px;
+      border-radius:999px;
+      color:var(--accent);
+      background:rgba(37,99,235,0.06);
+      font-size:0.85rem;
+      font-weight:600;
     }
 
     @media(max-width:768px){
@@ -224,6 +324,8 @@
 
 <body>
 
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
   <div class="container">
 
     <header>
@@ -234,123 +336,132 @@
 
       <nav>
         <a href="#about">About</a>
-        <a href="#research">Research</a>
         <a href="#publications">Publications</a>
         <a href="#contact">Contact</a>
       </nav>
 
     </header>
 
-    <main>
+    <main id="main-content">
 
       <section class="hero">
+        <div class="hero-grid">
+          <div class="photo">
+            <img src="assets/photo.jpeg" alt="Portrait of Harry Robertshaw" loading="lazy" />
+          </div>
 
-        <h1>Harry Robertshaw</h1>
+          <div class="hero-text">
+            <div class="title-row">
+              <h1>Harry Robertshaw</h1>
 
-        <p class="subtitle">
-          PhD Researcher at King’s College London developing AI-assisted robotic systems for autonomous endovascular stroke intervention.
-        </p>
+              <div class="links simple-links" aria-label="External links">
+                <a href="https://scholar.google.com/citations?user=ZEfmtG4AAAAJ&hl=en" target="_blank" rel="noopener">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2L1 7l11 5 9-4.09V17h2V7L12 2z"/><path d="M11 12.5V21h2v-8.5l-1-0.46-1 0.46z"/></svg>
+                  <span>Google Scholar</span>
+                </a>
 
-        <div class="award">
-          Forbes 30 Under 30 Europe — Science & Healthcare (2026)
+                <span style="color:var(--muted)">·</span>
+
+                <a href="https://www.linkedin.com/in/harry-robertshaw/" target="_blank" rel="noopener">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 24h5V7H0v17zM7 7h4.8v2.3h.1c.7-1.3 2.4-2.3 4-2.3 4.3 0 5.1 2.8 5.1 6.4V24H16v-8.1c0-2-0.04-4.6-2.8-4.6-2.8 0-3.2 2.2-3.2 4.4V24H7V7z"/></svg>
+                  <span>LinkedIn</span>
+                </a>
+
+                <span style="color:var(--muted)">·</span>
+
+                <a href="https://orcid.org/0000-0002-5486-8062" target="_blank" rel="noopener">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12h8" stroke="#fff" stroke-width="1.2"/></svg>
+                  <span>ORCID</span>
+                </a>
+
+                <span style="color:var(--muted)">·</span>
+
+                <a href="https://www.kcl.ac.uk/people/harry-robertshaw" target="_blank" rel="noopener">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2L2 7v2h2v8h4v-6h4v6h4V9h2V7L12 2z"/></svg>
+                  <span>KCL profile</span>
+                </a>
+              </div>
+            </div>
+
+            <p class="subtitle">
+              PhD Researcher at King’s College London developing AI-assisted robotic systems for autonomous endovascular stroke intervention.
+            </p>
+
+            <div class="award">
+              <a href="https://www.forbes.com/profile/harry-robertshaw/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Forbes 30 Under 30 Europe — Science & Healthcare (2026)
+                <svg class="external-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3zM5 5h6v2H7v10h10v-4h2v6H5V5z"/></svg>
+              </a>
+            </div>
+          </div>
         </div>
-
-        <div class="links">
-          <a class="button" href="CV.pdf">Download CV</a>
-
-          <a class="button" href="https://scholar.google.com/citations?user=ZEfmtG4AAAAJ&hl=en">
-            Google Scholar
-          </a>
-
-          <a class="button" href="https://www.linkedin.com/in/harry-robertshaw/">
-            LinkedIn
-          </a>
-
-          <a class="button" href="https://github.com/">
-            GitHub
-          </a>
-        </div>
-
       </section>
 
       <section id="about">
 
-        <h2>About</h2>
+        <div class="section-label">About</div>
 
         <p>
           I am a final-year PhD researcher in Surgical & Interventional Engineering at King’s College London, working at the intersection of medical robotics, artificial intelligence, and endovascular intervention.
         </p>
 
         <p>
-          My research focuses on autonomous and AI-assisted robotic systems for mechanical thrombectomy, using reinforcement learning and patient-derived vascular simulation environments to investigate safe robotic navigation through complex cerebrovascular anatomy.
+          My research focuses on autonomous and AI-assisted robotic systems for mechanical thrombectomy, using reinforcement learning and patient-derived vascular simulation environments to investigate safe robotic navigation through complex cerebrovascular anatomy. I am supervised by <a href="https://www.kcl.ac.uk/people/thomas-booth" target="_blank" rel="noopener">Thomas C. Booth</a> and <a href="https://www.kcl.ac.uk/people/alejandro-granados" target="_blank" rel="noopener">Alejandro Granados</a>.
         </p>
 
       </section>
 
-      <section id="research">
-
-        <h2>Research Areas</h2>
-
-        <div class="grid">
-
-          <div class="card">
-            <h3>Medical Robotics</h3>
-            <p>
-              Robotic systems for minimally invasive endovascular intervention.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>Reinforcement Learning</h3>
-            <p>
-              Autonomous navigation strategies trained in realistic vascular simulations.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>Stroke Intervention</h3>
-            <p>
-              AI-assisted approaches for mechanical thrombectomy and neurointervention.
-            </p>
-          </div>
-
-        </div>
-
-      </section>
+      <!-- Research section removed as requested -->
 
       <section id="publications">
 
         <h2>Selected Publications</h2>
 
         <div class="publication">
-          <div class="publication-title">
-            Toward Safe Autonomous Robotic Endovascular Interventions using World Models
-          </div>
+          <div class="pub-figure"><img src="assets/jaha.jpg" alt="Figure from START position statement (JAHA 2026)" loading="lazy"></div>
+          <div class="pub-body">
+            <div class="publication-title">
+              <a href="https://www.ahajournals.org/doi/full/10.1161/JAHA.125.044931" style="color:var(--text);text-decoration:none">A Position Statement on Endovascular Models and Effectiveness Metrics for Mechanical Thrombectomy Navigation (START)</a><span class="pub-year">2026</span>
+            </div>
 
-          <div class="publication-meta">
-            arXiv Preprint, 2026
+            <div class="publication-authors">Harry Robertshaw, Anna Barnes, Phil Blakelock et al.</div>
+
+            <div class="publication-meta">Journal of the American Heart Association, 2026</div>
+
+            <div class="pub-links"><a href="https://www.ahajournals.org/doi/full/10.1161/JAHA.125.044931">View Article</a></div>
           </div>
         </div>
 
         <div class="publication">
-          <div class="publication-title">
-            Transformer-Based Catheter Tip Tracking in Fluoroscopy for Autonomous Navigation
-          </div>
+          <div class="pub-figure"><img src="assets/ral.jpg" alt="Figure from HM-MARL paper (IEEE RAL 2026)" loading="lazy"></div>
+          <div class="pub-body">
+            <div class="publication-title">
+              <a href="https://doi.org/10.1109/LRA.2026.3664661">Toward AI Autonomous Navigation for Mechanical Thrombectomy Using Hierarchical Modular Multi-Agent Reinforcement Learning (HM-MARL)</a><span class="pub-year">2026</span>
+            </div>
 
-          <div class="publication-meta">
-            International Journal of Computer Assisted Radiology and Surgery, 2026
+            <div class="publication-authors">Harry Robertshaw, Nikola Fischer, Lennart Karstensen et al.</div>
+
+            <div class="publication-meta">IEEE Robotics and Automation Letters, April 2026</div>
+
+            <div class="pub-links"><a href="https://doi.org/10.1109/LRA.2026.3664661">View Article</a></div>
           </div>
         </div>
 
         <div class="publication">
-          <div class="publication-title">
-            Reinforcement Learning for Safe Autonomous Navigation of Cerebral Vessels
-          </div>
+          <div class="pub-figure"><img src="assets/ijcars.jpg" alt="Figure from 'Towards Real-Time Autonomous Navigation' (IJCAR 2026)" loading="lazy"></div>
+          <div class="pub-body">
+            <div class="publication-title">
+              <a href="https://link.springer.com/article/10.1007/s11548-026-03647-7">Towards Real-Time Autonomous Navigation: Transformer-Based Catheter Tip Tracking in Fluoroscopy</a><span class="pub-year">2026</span>
+            </div>
 
-          <div class="publication-meta">
-            International Journal of Computer Assisted Radiology and Surgery, 2025
+            <div class="publication-authors">Harry Robertshaw, Yanghe Hao, Weiyuan Deng et al.</div>
+
+            <div class="publication-meta">International Journal of Computer Assisted Radiology and Surgery, 2026</div>
+
+            <div class="pub-links"><a href="https://link.springer.com/article/10.1007/s11548-026-03647-7">View Article</a></div>
           </div>
         </div>
+
+        <!-- Duplicate Springer entry removed -->
 
         <div class="links" style="margin-top:30px;">
           <a class="button" href="https://scholar.google.com/citations?user=ZEfmtG4AAAAJ&hl=en">
@@ -360,20 +471,56 @@
 
       </section>
 
+      <section id="press">
+
+        <h2>Selected Press</h2>
+
+        <div class="press-grid">
+
+          <div class="press-item">
+            <div class="press-item-header">
+              <div class="press-logo-wrap"><img class="press-logo-image" src="assets/forbes.png" alt="Forbes logo" loading="lazy" /></div>
+              <a href="https://www.forbes.com/profile/harry-robertshaw/" target="_blank" rel="noopener">Forbes profile — Harry Robertshaw</a>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px"><div class="press-source">Forbes</div><span class="pub-year">2026</span></div>
+          </div>
+
+          <div class="press-item">
+            <div class="press-item-header">
+              <div class="press-logo-wrap"><img class="press-logo-image" src="assets/nn.png" alt="NeuroNews International logo" loading="lazy" /></div>
+              <a href="https://neuronewsinternational.com/consensus-statement-seeks-to-standardise-evaluation-of-robotic-systems-in-stroke-thrombectomy/" target="_blank" rel="noopener">Consensus statement seeks to standardise evaluation of robotic systems in stroke thrombectomy</a>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px"><div class="press-source">NeuroNews International</div><span class="pub-year">2026</span></div>
+          </div>
+
+          <div class="press-item">
+            <div class="press-item-header">
+              <div class="press-logo-wrap"><img class="press-logo-image" src="assets/kcl.jpg" alt="King's College London logo" loading="lazy" /></div>
+              <a href="https://www.kcl.ac.uk/news/ai-assisted-robotics-could-expand-access-to-life-saving-stroke-treatment" target="_blank" rel="noopener">AI-assisted robotics could expand access to life-saving stroke treatment</a>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px"><div class="press-source">King's College London</div><span class="pub-year">2026</span></div>
+          </div>
+
+        </div>
+
+      </section>
+
       <section id="contact">
 
         <h2>Contact</h2>
 
         <p>
-          Institutional email:
+          Email:
           <a href="mailto:harry.robertshaw@kcl.ac.uk" style="color:#93c5fd;">
-            harry.robertshaw@kcl.ac.uk
+            harry.robertshaw (at) kcl.ac.uk
           </a>
         </p>
 
       </section>
 
     </main>
+
+    <div style="margin-top:22px;color:var(--muted);font-size:0.92rem">Last updated: 19 May 2026</div>
 
     <footer>
       © 2026 Harry Robertshaw
