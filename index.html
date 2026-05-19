@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Harry Robertshaw — PhD Researcher</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+      :root{
+        --bg: #0f1724;
+        --card: #0b1220;
+        --muted: #9aa4b2;
+        --accent: #2dd4bf;
+        --accent-2: #60a5fa;
+        --glass: rgba(255,255,255,0.03);
+        --max-width: 1000px;
+      }
+
+      *{box-sizing: border-box}
+      html,body{height:100%}
+      body{
+        margin:0;
+        font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+        background: linear-gradient(180deg,#071025 0%, #0b1220 100%);
+        color:#e6eef6;
+        -webkit-font-smoothing:antialiased;
+      }
+
+      .wrap{width:90%;max-width:var(--max-width);margin:0 auto}
+
+      header.site-header{
+        padding:36px 0 28px;
+        display:flex;align-items:center;justify-content:space-between;
+      }
+
+      nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+      nav a:hover{color:var(--accent-2)}
+
+      .hero{
+        background: linear-gradient(90deg, rgba(34,197,94,0.06), rgba(96,165,250,0.04));
+        border-radius:12px;padding:36px;margin-top:18px;display:grid;grid-template-columns:1fr 300px;gap:24px;align-items:center
+      }
+
+      .hero h1{font-size:2.2rem;margin:0 0 6px;color:#fff}
+      .hero p.lead{color:var(--muted);margin:0 0 12px}
+
+      .badge{display:inline-block;background:var(--glass);color:var(--accent);padding:8px 12px;border-radius:999px;font-weight:700;font-size:0.85rem}
+
+      .columns{display:grid;grid-template-columns:2fr 1fr;gap:28px;margin-top:28px}
+
+      section.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-radius:10px;padding:20px}
+
+      h2{margin:0 0 12px;color:#fff;font-size:1.1rem}
+      .muted{color:var(--muted);font-size:0.95rem}
+
+      ul.pl{padding-left:18px}
+      li{margin-bottom:8px}
+
+      .pubs{display:grid;gap:12px}
+      .pub{background:rgba(255,255,255,0.02);padding:14px;border-radius:8px}
+      .pub .title{font-weight:600;color:#fff}
+      .pub .venue{color:var(--muted);font-size:0.9rem}
+
+      footer{margin:36px 0 16px;color:var(--muted);text-align:center;font-size:0.95rem}
+
+      .socials a{margin-right:12px;color:var(--muted);text-decoration:none}
+
+      @media (max-width:900px){
+        .hero{grid-template-columns:1fr}
+        .columns{grid-template-columns:1fr}
+        nav a{margin-left:12px}
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <header class="site-header">
+        <div>
+          <div class="badge">PhD Researcher — King's College London</div>
+        </div>
+        <nav aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="hero-title">
+          <div>
+            <h1 id="hero-title">Harry Robertshaw</h1>
+            <p class="lead">Developing AI-assisted robotic systems for autonomous endovascular stroke intervention. Combining reinforcement learning, simulation-driven validation, and surgical robotics.</p>
+            <p class="muted">Forbes 30 Under 30 Europe — Science & Healthcare (2026)</p>
+          </div>
+
+          <aside class="card" aria-label="Quick links">
+            <p style="margin-bottom:8px;font-weight:600">Quick links</p>
+            <div class="muted" style="margin-bottom:10px">Curriculum Vitae</div>
+            <div style="display:flex;gap:8px">
+              <a href="CV.pdf" style="background:var(--accent);color:#022; padding:8px 10px;border-radius:8px;text-decoration:none;font-weight:700">Download CV</a>
+              <a href="https://scholar.google.com/" style="background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);padding:8px 10px;border-radius:8px;text-decoration:none">Google Scholar</a>
+            </div>
+          </aside>
+        </section>
+
+        <div class="columns">
+          <div>
+            <section id="about" class="card" aria-labelledby="about-title">
+              <h2 id="about-title">About</h2>
+              <p class="muted">I am a final-year PhD researcher at King's College London working at the intersection of medical robotics, artificial intelligence, and endovascular intervention. My research focuses on autonomous and AI-assisted robotic systems for mechanical thrombectomy.</p>
+              <p class="muted">I use reinforcement learning and patient-derived vascular simulation environments to investigate safe robotic navigation of guidewires and catheters through complex cerebrovascular anatomy.</p>
+            </section>
+
+            <section id="publications" class="card" aria-labelledby="pub-title" style="margin-top:18px">
+              <h2 id="pub-title">Selected Publications</h2>
+              <div class="pubs">
+                <article class="pub">
+                  <div class="title">Autonomous Navigation for Robotic Endovascular Intervention</div>
+                  <div class="venue">IEEE / Medical Robotics Publication</div>
+                </article>
+
+                <article class="pub">
+                  <div class="title">AI-Assisted Stroke Intervention Using Reinforcement Learning</div>
+                  <div class="venue">Journal / Conference Publication</div>
+                </article>
+              </div>
+
+              <p style="margin-top:12px" class="muted">Full publication list: <a href="https://scholar.google.com/" style="color:var(--accent-2);text-decoration:none">Google Scholar</a></p>
+            </section>
+          </div>
+
+          <aside>
+            <section id="research" class="card" aria-labelledby="research-title">
+              <h2 id="research-title">Research Interests</h2>
+              <ul class="pl muted">
+                <li>Medical Robotics</li>
+                <li>Reinforcement Learning</li>
+                <li>Autonomous Endovascular Navigation</li>
+                <li>Mechanical Thrombectomy</li>
+                <li>AI for Healthcare</li>
+                <li>Surgical Robotics</li>
+              </ul>
+            </section>
+
+            <section id="news" class="card" style="margin-top:18px">
+              <h2>News & Recognition</h2>
+              <ul class="pl muted">
+                <li>Named to Forbes 30 Under 30 Europe (Science & Healthcare), 2026</li>
+                <li>Research featured by King's College London</li>
+                <li>Work aims to improve access to stroke treatment through AI-assisted robotics</li>
+              </ul>
+            </section>
+
+            <section id="links" class="card" style="margin-top:18px">
+              <h2>Links</h2>
+              <div style="display:flex;flex-direction:column;gap:8px">
+                <a href="https://www.linkedin.com/" class="muted">LinkedIn</a>
+                <a href="https://scholar.google.com/" class="muted">Google Scholar</a>
+                <a href="https://github.com/" class="muted">GitHub</a>
+              </div>
+            </section>
+          </aside>
+        </div>
+
+        <section id="cv" class="card" style="margin-top:20px">
+          <h2>Curriculum Vitae (summary)</h2>
+
+          <p class="muted"><strong>Contact</strong><br>
+          Melbourne, Australia | London, UK<br>
+          AU: +61 461 490 869 &nbsp; | &nbsp; UK: +44 7769 356418<br>
+          Email: <a href="mailto:harryjmr@hotmail.co.uk" style="color:var(--accent)">harryjmr@hotmail.co.uk</a></p>
+
+          <p class="muted"><strong>Online</strong><br>
+          <a href="https://www.linkedin.com/in/harry-robertshaw/" style="color:var(--accent-2)">LinkedIn</a> · <a href="https://scholar.google.com/citations?user=ZEfmtG4AAAAJ&hl=en" style="color:var(--accent-2)">Google Scholar</a> · <a href="CV.pdf" style="color:var(--accent-2)">Download full CV (PDF)</a></p>
+
+          <div style="margin-top:12px">
+            <h3 style="margin:0 0 8px;color:#fff;font-size:1rem">Experience (selected)</h3>
+            <ul class="pl muted">
+              <li><strong>University of Melbourne</strong> — Research Engineer, Biomedical Engineering (Apr 2026 – Present)</li>
+              <li><strong>King’s College London</strong> — PhD Student, Biomedical Engineering & Imaging Sciences (Oct 2022 – Apr 2026)</li>
+              <li><strong>Rolls‑Royce PLC</strong> — Graduate Trainee, Defence Aerospace (Sept 2021 – Jan 2023)</li>
+              <li><strong>University of Sheffield</strong> — Research Assistant (Aug 2020 – Sept 2020)</li>
+            </ul>
+          </div>
+
+          <div style="margin-top:10px">
+            <h3 style="margin:0 0 8px;color:#fff;font-size:1rem">Education</h3>
+            <p class="muted" style="margin:0 0 6px"><strong>PhD</strong> — King’s College London (Oct 2022 – Apr 2026). Research: AI-driven autonomous robotic navigation for endovascular stroke treatment.</p>
+            <p class="muted" style="margin:0"> <strong>MEng</strong> — University of Bristol (2017–2021), First-Class honours.</p>
+          </div>
+
+          <div style="margin-top:10px">
+            <h3 style="margin:0 0 8px;color:#fff;font-size:1rem">Funding & Awards</h3>
+            <p class="muted" style="margin:0 0 6px">EPSRC DTP PhD Scholarship (Oct 2022–Apr 2026); King's College London Travel & Conference Fund (Apr 2024); Forbes 30 Under 30 Europe — Science & Healthcare (2026).</p>
+          </div>
+
+          <div style="margin-top:10px">
+            <h3 style="margin:0 0 8px;color:#fff;font-size:1rem">Teaching & Supervision</h3>
+            <p class="muted" style="margin:0 0 6px">Teaching: Advanced Medical Robotics, Advanced Machine Learning, Applied Medical Robotics, Introduction to Programming for Bioscientists, Digital Circuits & Systems.</p>
+            <p class="muted" style="margin:0">Supervised MSc and MRes projects on RL for mechanical thrombectomy and simulation-to-real transfer; led group supervision for the Surgical & Interventional Engineering Summer School (2025).</p>
+          </div>
+
+          <div style="margin-top:10px">
+            <h3 style="margin:0 0 8px;color:#fff;font-size:1rem">Selected publications (highlights)</h3>
+            <div class="pubs">
+              <div class="pub"><div class="title">Toward Safe Autonomous Robotic Endovascular Interventions using World Models</div><div class="venue">Preprint: arXiv (2026) · <a href="https://arxiv.org/abs/2604.20151">arXiv:2604.20151</a></div></div>
+              <div class="pub"><div class="title">Towards Real-Time Autonomous Navigation: Transformer-Based Catheter Tip Tracking in Fluoroscopy</div><div class="venue">Int J Comput Assist Radiol Surg (2026) · DOI: <a href="https://doi.org/10.1007/s11548-026-03647-7">10.1007/s11548-026-03647-7</a></div></div>
+              <div class="pub"><div class="title">Reinforcement learning for safe autonomous two-device navigation of cerebral vessels</div><div class="venue">Int J Comput Assist Radiol Surg (2025) · DOI: <a href="https://doi.org/10.1007/s11548-025-03339-8">10.1007/s11548-025-03339-8</a></div></div>
+            </div>
+            <p class="muted" style="margin-top:8px">Full publication list: <a href="https://scholar.google.com/citations?user=ZEfmtG4AAAAJ&hl=en" style="color:var(--accent-2)">Google Scholar profile</a></p>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        © 2026 Harry Robertshaw — Built for clarity and readability
+      </footer>
+    </div>
+  </body>
+</html>
