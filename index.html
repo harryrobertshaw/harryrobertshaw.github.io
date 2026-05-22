@@ -5,11 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="assets/favicon.png" />
 
-  <meta name="description" content="Harry Robertshaw is a PhD researcher at King's College London developing AI-assisted robotic systems for autonomous stroke intervention." />
+  <meta name="description" content="Harry Robertshaw is a PhD researcher at King's College London working on AI-assisted robotic systems for endovascular stroke intervention." />
+  <meta name="author" content="Harry Robertshaw" />
 
   <meta property="og:title" content="Harry Robertshaw" />
   <meta property="og:description" content="PhD Researcher in AI-assisted robotic systems for stroke intervention at King's College London." />
+  <meta property="og:url" content="https://harryrobertshaw.github.io/" />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://harryrobertshaw.github.io/assets/social-preview.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://harryrobertshaw.github.io/assets/social-preview.jpg" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "name": "Harry Robertshaw",
+        "url": "https://harryrobertshaw.github.io/",
+        "jobTitle": "PhD Researcher",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "King's College London",
+          "url": "https://www.kcl.ac.uk/"
+        }
+      },
+      {
+        "@type": "Organization",
+        "name": "King's College London",
+        "url": "https://www.kcl.ac.uk/"
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "headline": "A Position Statement on Endovascular Models and Effectiveness Metrics for Mechanical Thrombectomy Navigation (START)",
+        "author": {
+          "@type": "Person",
+          "name": "Harry Robertshaw"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Journal of the American Heart Association"
+        },
+        "url": "https://www.ahajournals.org/doi/full/10.1161/JAHA.125.044931"
+      }
+    ]
+  }
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -158,6 +202,48 @@
     /* Make about section text darker for readability */
     section#about p{color:var(--text);max-width:none}
 
+    .research-interests{
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      gap:10px;
+      margin-top:4px;
+      margin-bottom:24px;
+      color:var(--muted);
+      font-size:0.98rem;
+    }
+
+    .research-interests strong{
+      color:var(--text);
+      font-size:0.82rem;
+      text-transform:uppercase;
+      letter-spacing:0.08em;
+      flex:0 0 auto;
+    }
+
+    .research-tag-list{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+    }
+
+    .research-tag{
+      display:inline-flex;
+      align-items:center;
+      padding:6px 12px;
+      border:1px solid var(--border);
+      border-radius:999px;
+      background:rgba(37,99,235,0.05);
+      color:var(--text);
+      font-size:0.92rem;
+      font-weight:600;
+      letter-spacing:-0.01em;
+    }
+
+    @media(max-width:640px){
+      .research-interests{display:none}
+    }
+
     .section-label{color:var(--muted);font-size:0.95rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px}
 
     .grid{
@@ -187,17 +273,15 @@
     }
 
     footer{
-      padding:36px 0 48px;
+      padding:28px 0 36px;
       border-top:1px solid var(--border);
       text-align:center;
     }
 
     footer p{
       margin:0;
-    }
-
-    footer p + p{
-      margin-top:8px;
+      color:var(--muted);
+      font-size:0.92rem;
     }
 
     .links{
@@ -484,6 +568,8 @@
           I am supervised by <a href="https://www.kcl.ac.uk/people/thomas-booth" target="_blank" rel="noopener">Thomas C. Booth</a> and <a href="https://www.kcl.ac.uk/people/alejandro-granados" target="_blank" rel="noopener">Alejandro Granados</a>. In 2021, I obtained an MEng in Electronic and Electrical Engineering (First Class Honours) from the <a href="https://www.bristol.ac.uk/" target="_blank" rel="noopener">University of Bristol</a>.
         </p>
 
+        <p class="research-interests"><strong>Research Interests</strong><span class="research-tag-list"><span class="research-tag">Reinforcement Learning</span><span class="research-tag">Surgical Robotics</span><span class="research-tag">Endovascular Intervention</span><span class="research-tag">Autonomous Navigation</span></span></p>
+
       </section>
 
       <section id="publications">
@@ -595,11 +681,7 @@
     </main>
 
     <footer>
-      <p>Harry Robertshaw</p>
-      <p style="color:var(--muted);font-size:0.9rem;">Medical Robotics · AI · Endovascular Intervention</p>
+      <p>© 2026 Harry Robertshaw</p>
     </footer>
-
-  </div>
-
 </body>
 </html>
