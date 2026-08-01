@@ -4,6 +4,7 @@ collection: publications
 permalink: /publication/comparative-verification/
 excerpt: "A comparative verification of control methods for robotic interventional neuroradiology."
 date: 2023-07-17
+authors: "Benjamin Jackson, William Crinnion, Mikel De Iturrate Reyzabal, Harry Robertshaw, Christos Bergeles, Kawal Rhode, and Thomas C. Booth"
 venue: "International Journal of Computer Assisted Radiology and Surgery"
 paperurl: "https://doi.org/10.1007/s11548-023-02991-2"
 citation: >-

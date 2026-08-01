@@ -14,7 +14,6 @@ News and media coverage of my research and related work.
 - **18 April — Medical Xpress:** [First international consensus on how to design, test and evaluate robotic systems for stroke treatment](https://medicalxpress.com/news/2026-04-international-consensus-robotic-treatment.html)
 - **14 April — Forbes:** [Harry Robertshaw — 30 Under 30 Europe, Science & Healthcare](https://www.forbes.com/profile/harry-robertshaw/)
 - **13 April — King's College London:** [King's leads global push to standardise robotics for stroke treatment](https://www.kcl.ac.uk/news/kings-leads-global-push-to-standardise-robotics-for-stroke-treatment)
-- **2 April — ICT&health:** [AI robot navigates autonomously to a blood clot during a stroke](https://www.icthealth.org/news/ai-robot-navigates-autonomously-to-a-blood-clot-during-a-stroke)
 - **31 March — Medical Xpress:** [AI-guided robot navigates thrombectomy route from leg to brain](https://medicalxpress.com/news/2026-03-ai-robot-thrombectomy-route-leg.html)
 - **31 March — King's College London:** [AI-assisted robotics could expand access to life-saving stroke treatment](https://www.kcl.ac.uk/news/ai-assisted-robotics-could-expand-access-to-life-saving-stroke-treatment)
 

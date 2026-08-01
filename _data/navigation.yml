@@ -1,8 +1,5 @@
 # Links displayed in the masthead. The site title links back to the homepage.
 main:
-  - title: "Research"
-    url: /research/
-
   - title: "Publications"
     url: /publications/
 

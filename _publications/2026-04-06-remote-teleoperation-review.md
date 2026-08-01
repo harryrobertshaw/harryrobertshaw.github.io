@@ -4,6 +4,7 @@ collection: publications
 permalink: /publication/remote-teleoperation-review/
 excerpt: "A systematic review of remote endovascular robotic intervention, including feasibility, communications, and clinical evidence."
 date: 2026-04-06
+authors: "Xingyu Chen, Yinchao Yang, Nikola Fischer, Harry Robertshaw, Benjamin Jackson, Mohammad Shikh-Bahaei, Christos Bergeles, and Thomas C. Booth"
 venue: "IEEE Transactions on Medical Robotics and Bionics"
 paperurl: "https://doi.org/10.1109/TMRB.2026.3681030"
 citation: >-

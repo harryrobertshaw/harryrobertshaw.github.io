@@ -4,6 +4,7 @@ collection: publications
 permalink: /publication/safe-two-device-navigation/
 excerpt: "A reinforcement learning method for safe autonomous catheter and guidewire navigation in cerebral vessel models."
 date: 2025-06-01
+authors: "Harry Robertshaw, Benjamin Jackson, Jiaheng Wang, S. M. Hadi Sadati, Lennart Karstensen, Alejandro Granados, and Thomas C. Booth"
 venue: "International Journal of Computer Assisted Radiology and Surgery"
 paperurl: "https://doi.org/10.1007/s11548-025-03339-8"
 citation: >-

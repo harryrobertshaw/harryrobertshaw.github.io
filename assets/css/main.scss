@@ -35,3 +35,26 @@
   object-fit: cover;
   object-position: 50% 40%;
 }
+
+/* Compact publication list inspired by the Cooperative AI Lab site. */
+.publication-entry {
+  margin: 0 0 1.6rem;
+}
+
+.publication-entry__title {
+  margin: 0 0 0.25rem;
+  border-bottom: 0;
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+
+.publication-entry__authors,
+.publication-entry__venue {
+  margin: 0.15rem 0;
+  line-height: 1.45;
+}
+
+.publication-entry__venue {
+  color: #666;
+  font-style: italic;
+}

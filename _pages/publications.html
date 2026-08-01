@@ -5,8 +5,17 @@ permalink: /publications/
 author_profile: true
 ---
 
-<p>Journal articles, conference papers, reviews, and preprints are listed below. For the most current citation record, see <a href="https://scholar.google.com/citations?user=ZEfmtG4AAAAJ&amp;hl=en">Google Scholar</a>.</p>
+<p>For the most current citation record, see <a href="https://scholar.google.com/citations?user=ZEfmtG4AAAAJ&amp;hl=en">Google Scholar</a>.</p>
 
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+{% assign publications = site.publications | sort: "date" | reverse %}
+<div class="publications-list">
+  {% for publication in publications %}
+    <article class="publication-entry">
+      <h2 class="publication-entry__title">
+        <a href="{{ publication.paperurl }}">{{ publication.title }}</a>
+      </h2>
+      <p class="publication-entry__authors">{{ publication.authors }}</p>
+      <p class="publication-entry__venue">{{ publication.venue }}, {{ publication.date | date: "%Y" }}</p>
+    </article>
+  {% endfor %}
+</div>

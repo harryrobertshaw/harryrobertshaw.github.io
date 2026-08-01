@@ -4,6 +4,7 @@ collection: publications
 permalink: /publication/evolving-surgical-teams/
 excerpt: "A perspective on how artificial intelligence and robotics may reshape surgical teams, practice, ethics, and regulation."
 date: 2026-05-07
+authors: "Alejandro Granados, Raghav Khanna, Nikola Fischer, Nicholas Raison, Margarita Ciabattini, Harry Robertshaw, Maxence Boels, Mohsan Malik, Veronica Granados, Tom Vercauteren, Jonathan Shapey, Thomas C. Booth, Asit Arora, Giorgio Gandaglia, Alberto Briganti, Francesco Montorsi, Christos Bergeles, Sebastien Ourselin, and Prokar Dasgupta"
 venue: "Frontiers in Science"
 paperurl: "https://doi.org/10.3389/fsci.2026.1783803"
 citation: >-

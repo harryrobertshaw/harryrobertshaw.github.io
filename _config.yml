@@ -15,9 +15,6 @@ future: true
 read_more: "disabled"
 comments:
   provider: false
-atom_feed:
-  path:
-
 # SEO and social sharing
 og_image: "/assets/social-preview.jpg"
 twitter:
@@ -101,14 +98,10 @@ timezone: Europe/London
 
 plugins:
   - jekyll-remote-theme
-  - jekyll-feed
-  - jekyll-sitemap
   - jekyll-redirect-from
 
 whitelist:
   - jekyll-remote-theme
-  - jekyll-feed
-  - jekyll-sitemap
   - jekyll-redirect-from
 
 compress_html:

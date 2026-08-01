@@ -4,6 +4,7 @@ collection: publications
 permalink: /publication/safe-world-models/
 excerpt: "A world-model-based reinforcement learning framework for safe and generalisable autonomous endovascular navigation."
 date: 2026-04-22
+authors: "Harry Robertshaw, Nikola Fischer, Han-Ru Wu, Andrea Walker Perez, Weiyuan Deng, Benjamin Jackson, Christos Bergeles, Alejandro Granados, and Thomas C. Booth"
 venue: "arXiv preprint"
 paperurl: "https://arxiv.org/abs/2604.20151"
 citation: >-

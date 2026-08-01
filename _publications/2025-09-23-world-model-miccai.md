@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/world-model-mechanical-thrombectomy/
 excerpt: "A world-model approach to autonomous navigation for mechanical thrombectomy, presented at MICCAI 2025."
 date: 2025-09-23
-venue: "Medical Image Computing and Computer Assisted Intervention (MICCAI 2025)"
+authors: "Harry Robertshaw, Han-Ru Wu, Alejandro Granados, and Thomas C. Booth"
+venue: "Medical Image Computing and Computer Assisted Intervention (MICCAI)"
 paperurl: "https://doi.org/10.1007/978-3-032-05114-1_65"
 citation: >-
   <strong>Harry Robertshaw</strong>, Han-Ru Wu, Alejandro Granados, and Thomas C. Booth (2025). “World Model for AI Autonomous Navigation in Mechanical Thrombectomy.” In <i>Medical Image Computing and Computer Assisted Intervention — MICCAI 2025</i>, LNCS 15968, 680–690.

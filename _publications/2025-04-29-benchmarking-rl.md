@@ -4,6 +4,7 @@ collection: publications
 permalink: /publication/benchmarking-reinforcement-learning/
 excerpt: "A comparative benchmark of reinforcement learning algorithms for autonomous mechanical thrombectomy navigation."
 date: 2025-04-29
+authors: "Farhana Moosa, Harry Robertshaw, Lennart Karstensen, Thomas C. Booth, and Alejandro Granados"
 venue: "International Journal of Computer Assisted Radiology and Surgery"
 paperurl: "https://doi.org/10.1007/s11548-025-03360-x"
 citation: >-

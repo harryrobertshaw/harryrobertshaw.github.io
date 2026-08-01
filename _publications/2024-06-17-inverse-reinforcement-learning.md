@@ -4,6 +4,7 @@ collection: publications
 permalink: /publication/inverse-reinforcement-learning/
 excerpt: "Inverse reinforcement learning from expert demonstrations for autonomous catheter and guidewire navigation."
 date: 2024-06-17
+authors: "Harry Robertshaw, Lennart Karstensen, Benjamin Jackson, Alejandro Granados, and Thomas C. Booth"
 venue: "International Journal of Computer Assisted Radiology and Surgery"
 paperurl: "https://doi.org/10.1007/s11548-024-03208-w"
 citation: >-

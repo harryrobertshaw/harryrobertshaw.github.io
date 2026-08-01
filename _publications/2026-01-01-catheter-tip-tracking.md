@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/catheter-tip-tracking/
 excerpt: "A transformer-based catheter tip tracking pipeline for real-time autonomous endovascular navigation, presented at IPCAI 2026."
 date: 2026-04-27
-venue: "International Journal of Computer Assisted Radiology and Surgery; IPCAI 2026"
+authors: "Harry Robertshaw, Yanghe Hao, Weiyuan Deng, Benjamin Jackson, S. M. Hadi Sadati, Nikola Fischer, Tom Vercauteren, Alejandro Granados, and Thomas C. Booth"
+venue: "International Journal of Computer Assisted Radiology and Surgery; presented at IPCAI"
 paperurl: "https://doi.org/10.1007/s11548-026-03647-7"
 citation: >-
   <strong>Harry Robertshaw</strong>, Yanghe Hao, Weiyuan Deng, Benjamin Jackson, S. M. Hadi Sadati, Nikola Fischer, Tom Vercauteren, Alejandro Granados, and Thomas C. Booth (2026). “Toward Real-Time Autonomous Navigation: Transformer-Based Catheter Tip Tracking in Fluoroscopy.” <i>International Journal of Computer Assisted Radiology and Surgery</i>, 21, 1071–1079. Presented at IPCAI 2026.

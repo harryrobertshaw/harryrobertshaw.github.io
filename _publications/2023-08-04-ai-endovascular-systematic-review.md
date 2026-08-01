@@ -4,6 +4,7 @@ collection: publications
 permalink: /publication/ai-endovascular-systematic-review/
 excerpt: "A systematic review of artificial intelligence methods for autonomous catheter and guidewire navigation in endovascular interventions."
 date: 2023-08-04
+authors: "Harry Robertshaw, Lennart Karstensen, Benjamin Jackson, S. M. Hadi Sadati, Kawal Rhode, Sebastien Ourselin, Alejandro Granados, and Thomas C. Booth"
 venue: "Frontiers in Human Neuroscience"
 paperurl: "https://doi.org/10.3389/fnhum.2023.1239374"
 citation: >-
