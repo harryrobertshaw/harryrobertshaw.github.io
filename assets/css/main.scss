@@ -1,0 +1,37 @@
+---
+---
+
+/* The same AcademicPages / Minimal Mistakes stylesheet used by the reference. */
+@import "vendor/breakpoint/breakpoint";
+@import "variables";
+@import "mixins";
+@import "vendor/susy/susy";
+
+@import "reset";
+@import "base";
+@import "utilities";
+@import "animations";
+@import "tables";
+@import "buttons";
+@import "notices";
+@import "masthead";
+@import "navigation";
+@import "footer";
+@import "syntax";
+@import "forms";
+@import "page";
+@import "archive";
+@import "sidebar";
+
+@import "vendor/font-awesome/fontawesome";
+@import "vendor/font-awesome/solid";
+@import "vendor/font-awesome/brands";
+@import "vendor/magnific-popup/magnific-popup";
+@import "print";
+
+/* Keep the portrait circular even though the original image is not square. */
+.author__avatar img {
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: 50% 40%;
+}

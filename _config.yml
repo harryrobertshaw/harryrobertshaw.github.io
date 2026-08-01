@@ -1,0 +1,125 @@
+# Site settings
+locale: "en-US"
+title: "Harry Robertshaw's Homepage"
+title_separator: "-"
+name: &name "Harry Robertshaw"
+description: &description "PhD researcher in AI-assisted medical robotics"
+url: "https://harryrobertshaw.github.io"
+baseurl: ""
+repository: "harryrobertshaw/harryrobertshaw.github.io"
+remote_theme: "yalidu/yalidu.github.io@12f05de664c5cda07999a427a9c80d079608fc98"
+
+breadcrumbs: false
+words_per_minute: 160
+future: true
+read_more: "disabled"
+comments:
+  provider: false
+atom_feed:
+  path:
+
+# SEO and social sharing
+og_image: "/assets/social-preview.jpg"
+twitter:
+  username:
+facebook:
+  username:
+social:
+  type: "Person"
+  name: "Harry Robertshaw"
+  links:
+    - "https://scholar.google.com/citations?user=ZEfmtG4AAAAJ&hl=en"
+    - "https://linkedin.com/in/harry-robertshaw"
+    - "https://orcid.org/0000-0002-5486-8062"
+
+analytics:
+  provider: false
+
+# Author profile shown in the left sidebar
+author:
+  name: "Harry Robertshaw"
+  avatar: "photo.jpeg"
+  bio: "PhD Researcher in AI-Assisted Medical Robotics"
+  location: "London, UK"
+  employer: "King's College London"
+  uri: "https://www.kcl.ac.uk/people/harry-robertshaw"
+  email: "harry.robertshaw@kcl.ac.uk"
+  googlescholar: "https://scholar.google.com/citations?user=ZEfmtG4AAAAJ&hl=en"
+  linkedin: "harry-robertshaw"
+  orcid: "https://orcid.org/0000-0002-5486-8062"
+
+# Files and collections
+include:
+  - _pages
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+markdown: kramdown
+highlighter: rouge
+excerpt_separator: "\n\n"
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+
+collections:
+  publications:
+    output: true
+    permalink: /publication/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: single
+      author_profile: true
+      share: false
+      comments: false
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+permalink: /:categories/:title/
+timezone: Europe/London
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+whitelist:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
