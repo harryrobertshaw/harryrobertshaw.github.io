@@ -14,12 +14,6 @@ I develop autonomous and AI-assisted systems for endovascular stroke treatment, 
 
 I am supervised by [Thomas C. Booth](https://www.kcl.ac.uk/people/thomas-booth) and [Alejandro Granados](https://www.kcl.ac.uk/people/alejandro-granados). In 2021, I obtained an MEng in Electronic and Electrical Engineering (First Class Honours) from the [University of Bristol](https://www.bristol.ac.uk/).
 
-<div style="color:#3f8fa8">
-  <ul>
-    <li>Named to <a href="https://www.forbes.com/profile/harry-robertshaw/">Forbes 30 Under 30 Europe — Science & Healthcare (2026)</a>.</li>
-  </ul>
-</div>
-
 ## Research Interests
 
 - Reinforcement learning
@@ -29,6 +23,10 @@ I am supervised by [Thomas C. Booth](https://www.kcl.ac.uk/people/thomas-booth) 
 
 ## Recent News
 
-- **2026** — Our position statement on endovascular models and effectiveness metrics for mechanical thrombectomy navigation was published in the *Journal of the American Heart Association*.
-- **2026** — Our work on hierarchical modular multi-agent reinforcement learning for autonomous mechanical thrombectomy navigation was published in *IEEE Robotics and Automation Letters*.
-- **2026** — Our transformer-based catheter tip tracking research was published in the *International Journal of Computer Assisted Radiology and Surgery*.
+- **July 2026** — Presented [“Toward Real-Time Autonomous Navigation: Transformer-Based Catheter Tip Tracking in Fluoroscopy”](https://doi.org/10.1007/s11548-026-03647-7) at [IPCAI 2026](https://sites.google.com/view/ipcai2026/home) in Nagoya, Japan.
+- **July 2026** — Our paper on [vascular geometry characterisation for AI-based endovascular navigation](https://doi.org/10.1007/s11548-026-03742-9) was published and presented at IPCAI 2026.
+- **May 2026** — Our perspective on [evolving surgical teams in the age of artificial intelligence and robotics](https://doi.org/10.3389/fsci.2026.1783803) was published in *Frontiers in Science*.
+- **April 2026** — Named to [Forbes 30 Under 30 Europe — Science & Healthcare](https://www.forbes.com/profile/harry-robertshaw/).
+- **April 2026** — Our [START position statement](https://doi.org/10.1161/JAHA.125.044931) on endovascular models and effectiveness metrics for mechanical thrombectomy navigation was published in the *Journal of the American Heart Association*.
+- **April 2026** — Our [transformer-based catheter tip tracking research](https://doi.org/10.1007/s11548-026-03647-7) was published in the *International Journal of Computer Assisted Radiology and Surgery*.
+- **February 2026** — Our work on [hierarchical modular multi-agent reinforcement learning](https://doi.org/10.1109/LRA.2026.3664661) for autonomous mechanical thrombectomy navigation was published in *IEEE Robotics and Automation Letters*.
