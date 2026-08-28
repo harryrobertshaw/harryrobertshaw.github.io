@@ -1,6 +1,7 @@
 ---
 layout: archive
 title: "Publications"
+excerpt: "Journal articles, conference papers, and preprints by Harry Robertshaw on AI-assisted medical robotics and autonomous endovascular intervention."
 permalink: /publications/
 author_profile: true
 ---
@@ -15,6 +16,9 @@ author_profile: true
         <a href="{{ publication.paperurl }}">{{ publication.title }}</a>
       </h2>
       <p class="publication-entry__authors">{{ publication.authors }}</p>
+      {% if publication.author_note %}
+        <p class="publication-entry__authors"><em>{{ publication.author_note }}</em></p>
+      {% endif %}
       <p class="publication-entry__venue">{{ publication.venue }}, {{ publication.date | date: "%Y" }}</p>
     </article>
   {% endfor %}

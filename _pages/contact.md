@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Contact"
+excerpt: "Contact Harry Robertshaw and find his academic and professional profiles."
 permalink: /contact/
 author_profile: true
 ---

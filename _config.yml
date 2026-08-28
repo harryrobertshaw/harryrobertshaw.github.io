@@ -1,9 +1,9 @@
 # Site settings
 locale: "en-US"
-title: "Harry Robertshaw's Homepage"
+title: "Harry Robertshaw"
 title_separator: "-"
 name: &name "Harry Robertshaw"
-description: &description "PhD researcher in AI-assisted medical robotics"
+description: &description "Harry Robertshaw is a PhD researcher developing AI-assisted medical robotics for autonomous endovascular intervention and mechanical thrombectomy."
 url: "https://harryrobertshaw.github.io"
 baseurl: ""
 repository: "harryrobertshaw/harryrobertshaw.github.io"
@@ -16,7 +16,8 @@ read_more: "disabled"
 comments:
   provider: false
 # SEO and social sharing
-og_image: "/assets/social-preview.jpg"
+og_image: "photo.jpeg"
+google_site_verification:
 twitter:
   username:
 facebook:
@@ -99,10 +100,12 @@ timezone: Europe/London
 plugins:
   - jekyll-remote-theme
   - jekyll-redirect-from
+  - jekyll-sitemap
 
 whitelist:
   - jekyll-remote-theme
   - jekyll-redirect-from
+  - jekyll-sitemap
 
 compress_html:
   clippings: all

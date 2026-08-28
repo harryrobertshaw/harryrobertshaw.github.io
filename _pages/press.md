@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Press"
+excerpt: "News and media coverage of Harry Robertshaw's research in AI-assisted medical robotics and autonomous stroke intervention."
 permalink: /press/
 author_profile: true
 ---

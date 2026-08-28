@@ -1,7 +1,7 @@
 ---
 permalink: /
-title: ""
-excerpt: ""
+title: "AI-Assisted Medical Robotics Researcher"
+excerpt: "Harry Robertshaw is a PhD researcher developing AI-assisted medical robotics for autonomous endovascular intervention and mechanical thrombectomy."
 author_profile: true
 redirect_from:
   - /about/
