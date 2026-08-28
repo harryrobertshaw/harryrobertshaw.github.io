@@ -19,6 +19,7 @@ News and media coverage of my research and related work.
 
 ## 2024
 
+- **25 June — NeuroNews International:** [Researchers highlight potential for autonomous stroke thrombectomy treatments in new paper](https://neuronewsinternational.com/autonomous-stroke-thrombectomy-treatments-ai-robotics/)
 - **17 June — King's College London:** [Robotics and AI combination has potential to improve safety in emergency stroke surgeries](https://www.kcl.ac.uk/news/robotics-and-ai-combination-has-potential-to-improve-safety-in-emergency-stroke-surgeries)
 
 ## 2023
