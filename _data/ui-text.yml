@@ -6,7 +6,7 @@ en-US:
   breadcrumb_separator: ">"
   follow_label: "Follow:"
   powered_by: "Powered by"
-  website_label: "KCL Profile"
+  website_label: "NeuroBionics Lab"
   email_label: "Email"
   recent_posts: "Recent Posts"
   undefined_wpm: "Undefined parameter words_per_minute at _config.yml"
