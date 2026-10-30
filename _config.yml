@@ -3,7 +3,7 @@ locale: "en-US"
 title: "Harry Robertshaw"
 title_separator: "-"
 name: &name "Harry Robertshaw"
-description: &description "Harry Robertshaw is a Research Engineer at the University of Melbourne with a PhD in Biomedical Engineering, developing AI-assisted medical robotics for autonomous endovascular intervention and mechanical thrombectomy."
+description: &description "Harry Robertshaw is a Research Engineer at the University of Melbourne with a PhD in Biomedical Engineering (2022–2026), developing AI-assisted medical robotics for autonomous endovascular intervention and mechanical thrombectomy."
 url: "https://harryrobertshaw.github.io"
 baseurl: ""
 repository: "harryrobertshaw/harryrobertshaw.github.io"
@@ -17,7 +17,7 @@ comments:
   provider: false
 # SEO and social sharing
 og_image: "photo.jpeg"
-google_site_verification:
+google_site_verification: "PpZumNZy5z-dcKmrjWJpG-2p2ivf88eQIy2Du7SnhWs"
 twitter:
   username:
 facebook:
@@ -37,7 +37,7 @@ analytics:
 author:
   name: "Harry Robertshaw"
   avatar: "photo.jpeg"
-  bio: "Research Engineer | PhD in Biomedical Engineering"
+  bio: "Research Engineer | PhD in Biomedical Engineering (2022–2026)"
   location: "Melbourne, Australia"
   employer: "University of Melbourne"
   uri: "https://biomedical.eng.unimelb.edu.au/john-neurobionics"

@@ -1,14 +1,14 @@
 ---
 permalink: /
 title: "Research Engineer in AI-Assisted Medical Robotics"
-excerpt: "Harry Robertshaw is a Research Engineer at the University of Melbourne with a PhD in Biomedical Engineering, developing AI-assisted medical robotics for autonomous endovascular intervention and mechanical thrombectomy."
+excerpt: "Harry Robertshaw is a Research Engineer at the University of Melbourne with a PhD in Biomedical Engineering (2022–2026), developing AI-assisted medical robotics for autonomous endovascular intervention and mechanical thrombectomy."
 author_profile: true
 redirect_from:
   - /about/
   - /about.html
 ---
 
-I am currently a Research Engineer in the [NeuroBionics Lab](https://biomedical.eng.unimelb.edu.au/john-neurobionics) at the [University of Melbourne](https://www.unimelb.edu.au). I hold a PhD in Biomedical Engineering from [King's College London](https://www.kcl.ac.uk/), where I was supervised by [Thomas C. Booth](https://www.kcl.ac.uk/people/thomas-booth) and [Alejandro Granados](https://www.kcl.ac.uk/people/alejandro-granados). My research sits at the intersection of medical robotics, reinforcement learning, and neurovascular intervention.
+I am currently a Research Engineer in the [NeuroBionics Lab](https://biomedical.eng.unimelb.edu.au/john-neurobionics) at the [University of Melbourne](https://www.unimelb.edu.au). I hold a PhD in Biomedical Engineering (2022–2026) from [King's College London](https://www.kcl.ac.uk/), where I was supervised by [Thomas C. Booth](https://www.kcl.ac.uk/people/thomas-booth) and [Alejandro Granados](https://www.kcl.ac.uk/people/alejandro-granados). My research sits at the intersection of medical robotics, reinforcement learning, and neurovascular intervention.
 
 I develop autonomous and AI-assisted systems for endovascular stroke treatment, using patient-specific vascular simulation environments to investigate safe robotic navigation through complex cerebrovascular anatomy. My work aims to advance intelligent robotic assistance for mechanical thrombectomy and improve the accessibility and scalability of stroke care.
 
