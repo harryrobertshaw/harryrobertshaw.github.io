@@ -10,15 +10,18 @@ redirect_from:
 
 I am a Postdoctoral Research Associate in Artificial Intelligence for Autonomous Endovascular Robotics at [King’s College London](https://www.kcl.ac.uk/people/harry-robertshaw), based in the [School of Biomedical Engineering & Imaging Sciences](https://www.kcl.ac.uk/bmeis). My research sits at the intersection of medical robotics, reinforcement learning, and neurovascular intervention.
 
-I develop and evaluate autonomous and AI-assisted systems for endovascular stroke treatment. I use patient-specific simulations and physical vascular models to study how robots can navigate catheters and guidewires for [mechanical thrombectomy](https://www.kcl.ac.uk/news/ai-assisted-robotics-could-expand-access-to-life-saving-stroke-treatment). I also contributed to the [START consensus statement](https://www.kcl.ac.uk/news/kings-leads-global-push-to-standardise-robotics-for-stroke-treatment), which sets out how robotic thrombectomy systems should be tested and evaluated.
+I develop and evaluate autonomous and AI-assisted systems for endovascular stroke treatment. My work uses robot learning, world models, and sim-to-real transfer to bring methods developed in simulation onto physical robots. During my PhD, I tested autonomous guidewire and catheter navigation for [mechanical thrombectomy](https://www.kcl.ac.uk/news/ai-assisted-robotics-could-expand-access-to-life-saving-stroke-treatment) under fluoroscopy in 3D-printed models of previously unseen patient anatomies. I also contributed to the [START consensus statement](https://www.kcl.ac.uk/news/kings-leads-global-push-to-standardise-robotics-for-stroke-treatment), which sets out how robotic thrombectomy systems should be tested and evaluated.
 
-Before returning to King’s, I was a Research Engineer in the [NeuroBionics Lab](https://biomedical.eng.unimelb.edu.au/john-neurobionics) at the University of Melbourne. I hold a PhD in Biomedical Engineering (2022–2026) from King’s College London, where I was supervised by [Thomas C. Booth](https://www.kcl.ac.uk/people/thomas-booth) and [Alejandro Granados](https://www.kcl.ac.uk/people/alejandro-granados).
+I am also a Visiting Researcher at the University of Melbourne, where I previously worked as a Research Engineer in the [NeuroBionics Lab](https://biomedical.eng.unimelb.edu.au/john-neurobionics). I continue to collaborate on miniaturised medical devices for sensing, stimulation, and therapy.
+
+I hold a PhD in Biomedical Engineering (2022–2026) from King’s College London, where I was supervised by [Thomas C. Booth](https://www.kcl.ac.uk/people/thomas-booth) and [Alejandro Granados](https://www.kcl.ac.uk/people/alejandro-granados).
 
 In 2021, I obtained an MEng in Electronic and Electrical Engineering (First Class Honours) from the [University of Bristol](https://www.bristol.ac.uk/).
 
 ## Research Interests
 
 - Reinforcement learning
+- World models and sim-to-real transfer
 - Surgical robotics
 - Endovascular intervention
 - Autonomous navigation
