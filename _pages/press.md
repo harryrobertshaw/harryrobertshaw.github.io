@@ -8,6 +8,11 @@ author_profile: true
 
 News and media coverage of my research and related work.
 
+## Research features
+
+- **Instagram:** [Research feature on autonomous endovascular robotics](https://www.instagram.com/reel/DgFjMqnxsic/)
+- **King’s College London on LinkedIn:** [Research feature on autonomous robotic navigation for stroke treatment](https://www.linkedin.com/posts/king%27s-college-london_a-robot-which-autonomously-navigates-towards-activity-7530612621407043584-UU1m)
+
 ## 2026
 
 - **14 May — King's College London:** [AI-powered surgical robots could transform surgery if regulatory gaps are closed](https://www.kcl.ac.uk/news/ai-powered-surgical-robots-could-transform-surgery-if-regulatory-gaps-are-closed-newly-released-paper)
