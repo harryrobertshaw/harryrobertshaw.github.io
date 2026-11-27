@@ -7,7 +7,8 @@ description: &description "Harry Robertshaw is a Postdoctoral Research Associate
 url: "https://harryrobertshaw.github.io"
 baseurl: ""
 repository: "harryrobertshaw/harryrobertshaw.github.io"
-remote_theme: "yalidu/yalidu.github.io@12f05de664c5cda07999a427a9c80d079608fc98"
+# Keep the theme pinned to a revision compatible with assets/css/main.scss.
+remote_theme: "academicpages/academicpages.github.io@1acca92e64c8e345fdda983aca94f1ce0bbd3447"
 
 breadcrumbs: false
 words_per_minute: 160
