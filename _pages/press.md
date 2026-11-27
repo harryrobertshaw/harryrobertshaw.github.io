@@ -8,13 +8,9 @@ author_profile: true
 
 News and media coverage of my research and related work.
 
-## Research features
-
-- **Instagram:** [Research feature on autonomous endovascular robotics](https://www.instagram.com/reel/DgFjMqnxsic/)
-- **King’s College London on LinkedIn:** [Research feature on autonomous robotic navigation for stroke treatment](https://www.linkedin.com/posts/king%27s-college-london_a-robot-which-autonomously-navigates-towards-activity-7530612621407043584-UU1m)
-
 ## 2026
 
+- **November — King’s College London:** Research feature on autonomous robotic navigation for stroke treatment ([Instagram](https://www.instagram.com/reel/DgFjMqnxsic/) and [LinkedIn](https://www.linkedin.com/posts/king%27s-college-london_a-robot-which-autonomously-navigates-towards-activity-7530612621407043584-UU1m)).
 - **14 May — King's College London:** [AI-powered surgical robots could transform surgery if regulatory gaps are closed](https://www.kcl.ac.uk/news/ai-powered-surgical-robots-could-transform-surgery-if-regulatory-gaps-are-closed-newly-released-paper)
 - **24 April — NeuroNews International:** [Consensus statement seeks to standardise evaluation of robotic systems in stroke thrombectomy](https://neuronewsinternational.com/consensus-statement-seeks-to-standardise-evaluation-of-robotic-systems-in-stroke-thrombectomy/)
 - **18 April — Medical Xpress:** [First international consensus on how to design, test and evaluate robotic systems for stroke treatment](https://medicalxpress.com/news/2026-04-international-consensus-robotic-treatment.html)
