@@ -36,42 +36,6 @@
   object-position: 50% 40%;
 }
 
-/* Keep these sidebar icons independent of the theme's icon fonts. */
-.author__urls {
-  .fa-building-columns {
-    --profile-icon: url("../icons/institution.svg");
-  }
-
-  .fa-link {
-    --profile-icon: url("../icons/link.svg");
-  }
-
-  .ai-google-scholar {
-    --profile-icon: url("../icons/graduation-cap.svg");
-  }
-
-  .fa-building-columns,
-  .fa-link,
-  .ai-google-scholar {
-    display: inline-block;
-    width: 1.25em;
-    padding-right: 0;
-    text-align: center;
-
-    &::before {
-      display: inline-block;
-      width: 1em;
-      height: 1em;
-      vertical-align: -0.125em;
-      background-color: currentColor;
-      -webkit-mask: var(--profile-icon) center / contain no-repeat;
-      mask: var(--profile-icon) center / contain no-repeat;
-      forced-color-adjust: none;
-      content: "";
-    }
-  }
-}
-
 /* Compact publication list inspired by the Cooperative AI Lab site. */
 .publication-entry {
   margin: 0 0 1.6rem;
